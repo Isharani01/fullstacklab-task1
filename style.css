@@ -8,6 +8,7 @@
     width: 100px;
     height: 100px;
     background-color: rgb(129, 71, 121);
+      transition: transform 0.3s;
 }
 .square:hover {
   transform: translateX(60px);
