@@ -9,3 +9,6 @@
     height: 100px;
     background-color: rgb(129, 71, 121);
 }
+.square:hover {
+  transform: translateX(60px);
+}
