@@ -17,9 +17,11 @@ header, footer {
   background: #1a2744;
   color: #fff;
   padding: 1rem;
-  
+
 }
 nav {
   background: #eee;
   padding: 1rem;
+  gap: 1rem;
+  display: flex;
 }
