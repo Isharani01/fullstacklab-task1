@@ -1,90 +1,87 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #2b2b2b;
-  line-height: 1.6;
-  background: #fafafa;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #333;
+  line-height: 1.7;
+  background: #fdfaf3;
 }
 
 header, footer {
   background: #2e2910;
-  color: #fff;
-  padding: 1.5rem;
+  color: #f5f0e1;
+  padding: 1.2rem;
   text-align: center;
 }
 
+header h1 {
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
 nav {
-  background: #eee;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  background: #f5f0e1;
+  padding: 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
 nav a {
   color: #2e2910;
   text-decoration: none;
-  font-weight: bold;
+  margin: 0 1rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 nav a:hover {
   color: #ee8500;
+  text-decoration: underline;
 }
 
 section {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 650px;
+  margin: 2.5rem auto;
+  padding: 0 1rem;
 }
 
 section h2 {
   color: #2e2910;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-section h2 + * {
-  margin-top: 0;
-}
-
-section > * + * {
-  margin-top: 1.2rem;
+  font-weight: normal;
+  border-bottom: 1px solid #2d5c4c;
+  padding-bottom: 0.4rem;
 }
 
 #three {
   background: #ece6ae;
+  padding: 1.5rem 1rem;
+  border-radius: 4px;
 }
 
 figure {
-  margin: 0;
+  margin: 1.2rem 0;
   text-align: center;
 }
 
 figcaption {
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 0.3rem;
 }
 
 blockquote {
-  border-left: 4px solid #2d5c4c;
+  border-left: 3px solid #2d5c4c;
+  margin: 1.2rem 0;
   padding-left: 1rem;
   color: #555;
   font-style: italic;
-  margin: 0;
 }
 
 fieldset {
-  border: 1px solid #2d5c4c;
-  border-radius: 8px;
-  padding: 1.5rem;
-}
-
-fieldset > * + * {
-  margin-top: 0.9rem;
+  border: 1px solid #ccc;
+  padding: 1.2rem;
+  margin-top: 1rem;
 }
 
 legend {
@@ -94,22 +91,22 @@ legend {
 }
 
 label {
-  font-weight: bold;
-  margin-bottom: 0.3rem;
   display: block;
+  margin: 0.8rem 0 0.3rem;
+  font-size: 0.95rem;
 }
 
 input, select, textarea {
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 0.4rem;
+  border: 1px solid #bbb;
+  font-family: inherit;
   width: 100%;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
-  display: inline-block;
+  display: inline;
   margin-right: 0.4rem;
 }
 
@@ -117,64 +114,56 @@ input[type="email"] {
   border: 1px solid #2e2910;
 }
 
-.field-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 button {
-  padding: 0.6rem 1.4rem;
-  border: none;
-  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid #2e2910;
+  background: #fff;
+  color: #2e2910;
   cursor: pointer;
-  margin-right: 0.6rem;
+  margin: 1rem 0.5rem 0 0;
+  font-family: inherit;
+}
+
+button:hover {
+  background: #2e2910;
   color: #fff;
-  font-weight: bold;
-}
-
-button[type="submit"] {
-  background: #2d5c4c;
-}
-
-button[type="reset"] {
-  background: #ee8500;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 0.7rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0.6rem;
   text-align: left;
 }
 
 th {
-  background: #2e2910;
-  color: #fff;
-}
-
-.shapes-row {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+  border-bottom: 2px solid #2e2910;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
 }
 
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-color: #2d5c4c;
   border-radius: 50%;
+  display: inline-block;
 }
 
 .square {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-color: #ee8500;
   transition: transform 0.3s;
+  display: inline-block;
+  margin-left: 1.5rem;
 }
 
 .square:hover {
